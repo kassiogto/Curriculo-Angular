@@ -1,0 +1,44 @@
+.actions {
+  display:  flex;
+  width: 100%;
+  gap: 10px;
+ justify-content: center;
+}
+
+.content {
+  margin-top: 10px;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.p-button-border {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.p-inputtext {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0px;
+}
+
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+small {
+  margin-bottom: 7px;
+}
+
+@media (max-width: 867px) {
+  .p-inputtext  {
+    padding: 0.50rem 0.55rem;
+  }
+  .p-button-border   {
+    padding: 0.51rem 1.25rem;
+  }
+  .content {
+    height: 400px;
+  }
+}

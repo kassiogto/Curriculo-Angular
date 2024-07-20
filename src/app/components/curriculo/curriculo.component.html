@@ -1,0 +1,40 @@
+<main>
+  <div class="card">
+    <p-menubar [model]="items">
+      <ng-template pTemplate="start">
+        <div class="gap">
+          <a
+            type="button"
+            pButton
+            pRipple
+            severity="info"
+            icon="pi pi-arrow-left"
+          ></a>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="end" style="display: flex; justify-content: center; align-items: center;">
+        <div style="display: flex; align-items: center;">
+          <div>
+            <a
+            style="text-decoration: none; margin-right: 50px;"
+                type="button"
+                pButton
+                pRipple
+                severity="info"
+                icon="pi pi-arrow-left"
+                href="/"
+              >&nbsp; &nbsp;Voltar</a>
+          </div>
+
+            <img
+              src="https://avatars.githubusercontent.com/u/55071994?v=4&size=64"
+              alt="Avatar"
+              style="border-radius: 100%; margin-right: 10px"
+            />
+        </div>
+      </ng-template>
+    </p-menubar>
+  </div>
+
+  <main>Conteudo</main>
+</main>

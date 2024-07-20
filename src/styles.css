@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+.p-button:focus {
+  border-color: 0;
+  box-shadow: none;
+}
+.p-inputtext:enabled:focus {
+  border-color: 0;
+  box-shadow: none;
+}
+
+.full-screen-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(210, 211, 212);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.p-card .p-card-content {
+  padding: 0 !important;
+}
+
+.p-tag {
+  white-space: nowrap;
+  padding: 5px 10px;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px; /* Largura da scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da trilha */
+  border-radius: 10px; /* Arredondamento da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cor da parte deslizante */
+  border-radius: 10px; /* Arredondamento da parte deslizante */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor da parte deslizante quando o mouse está sobre ela */
+}
+
+/* Estilização da scrollbar para Firefox */
+* {
+  scrollbar-width: thin; /* Espessura da scrollbar */
+  scrollbar-color: #888 #f1f1f1; /* Cor da parte deslizante e da trilha */
+}
