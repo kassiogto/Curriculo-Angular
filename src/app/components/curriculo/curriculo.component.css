@@ -1,10 +1,198 @@
-.gap {
-  width: 350px;
+body,
+:root, h1 {
+  font-family: monospace;
 }
 
-@media (max-width: 1000px) {
-  .gap {
-    display: none;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#content {
+  margin-top: 80px;
+}
+
+.item-voltar {
+  display: none;
+}
+
+.gap {
+  margin-right: 30px;
+}
+
+#sobre {
+  display: flex;
+  width: 100%;
+  padding: 40px 0 40px 10%;
+}
+
+.imagem {
+  width: 400px;
+}
+
+.moldura {
+  background-color: white;
+  padding: 40px 60px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  max-width: 400px;
+}
+
+.moldura img {
+  background-size: cover;
+  height: 350px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.moldura p {
+  font-size: 19px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.moldura b {
+  margin-left: 6px;
+}
+
+.moldura div {
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #d8e0e4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.type {
+  max-width: 700px;
+  padding: 0 40px;
+  margin: 40px 0 0px 20px;
+}
+
+.ola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(40, 40, 40);
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.typewriter {
+  min-height: 145px;
+}
+
+.typewriter p {
+  display: inline;
+  font-family: monospace; /* Tipografia que imita a digitação */
+  font-size: 1.5rem;
+  overflow: hidden;
+  border-right: 0.15em solid black; /* O cursor de digitação */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
   }
 }
 
+@media (max-width: 1296px) {
+ .type {
+  max-width: 570px;
+ }
+
+  #sobre {
+    padding: 20px 20px;
+  }
+
+}
+
+@media (max-width: 1010px) {
+  #sobre {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 40px 0;
+  }
+
+  .type-div {
+    max-width: 400px;
+
+
+  }
+}
+
+@media (max-width: 1000px) {
+   #sobre {
+    padding: 20px 0;
+   }
+
+  .type-div {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    padding: 0 10px;
+  }
+
+}
+
+/*  ! sobre mim ! */
+
+#sobre-mim {
+  padding: 40px 10%;
+  margin: 40px 0;
+}
+
+
+#sobre-mim h1 {
+
+}
+
+
+.sobre-mim-text {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+
+
+/*  ! experiencias  ! */
+
+#experiencias {
+  padding: 40px 10%;
+  margin: 40px 0;
+}

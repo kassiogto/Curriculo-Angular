@@ -1,5 +1,5 @@
 <main>
-  <div class="card">
+  <div class="navbar">
     <p-menubar [model]="items">
       <ng-template pTemplate="start">
         <div class="gap">
@@ -9,32 +9,137 @@
             pRipple
             severity="info"
             icon="pi pi-arrow-left"
+            href="/todo-list"
+            style="text-decoration: none;"
           ></a>
         </div>
       </ng-template>
-      <ng-template pTemplate="end" style="display: flex; justify-content: center; align-items: center;">
-        <div style="display: flex; align-items: center;">
-          <div>
-            <a
-            style="text-decoration: none; margin-right: 50px;"
-                type="button"
-                pButton
-                pRipple
-                severity="info"
-                icon="pi pi-arrow-left"
-                href="/"
-              >&nbsp; &nbsp;Voltar</a>
-          </div>
-
-            <img
-              src="https://avatars.githubusercontent.com/u/55071994?v=4&size=64"
-              alt="Avatar"
-              style="border-radius: 100%; margin-right: 10px"
-            />
+      <ng-template
+        pTemplate="end"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <div style="display: flex; align-items: center">
+          <img
+            src="https://avatars.githubusercontent.com/u/55071994?v=4&size=64"
+            alt="Avatar"
+            style="border-radius: 100%; margin-right: 10px"
+          />
         </div>
       </ng-template>
     </p-menubar>
   </div>
 
-  <main>Conteudo</main>
+  <main id="content">
+    <main id="sobre">
+      <div class="imagem">
+        <div class="moldura">
+          <img
+            src="https://i.imgur.com/Suy4sKI.png"
+            alt="Avatar"
+            style="margin-right: 10px"
+          />
+          <p>Sou <b>Kássio Aguirres</b></p>
+          <div>
+            Desenvolvedor Front-end
+          </div>
+        </div>
+      </div>
+      <div class="type">
+        <div class="type-div">
+          <h2 class="ola">Olá!</h2>
+
+          <div class="typewriter">
+            <p [innerHTML]="displayText"></p>
+          </div>
+
+          <p>
+            Consegui boas habilidades em escrever um código limpo e simples,
+            <br />
+            sempre pensando na usabilidade em dispositivos moveis <br />
+            usando as tecnologias Angular, Java Spring e flutter.
+          </p>
+        </div>
+      </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <p-divider />
+    <br>
+    <main id="sobre-mim" >
+      <h1>Sobre Mim</h1>
+      <br>
+      <p class="sobre-mim-text">
+        Eu comecei estudando programação desde meus 18 anos. A primeira framework que eu estudei foi Angular. <br> Ao me aprofundar nos conteúdos de programação, vi que tinha bastante hype sobre React e Node, <br> foi quando migrei de frameworks e, durante um ano de estudos, consegui meu primeiro emprego como desenvolvedor júnior.
+      </p>
+      <p class="sobre-mim-text">
+        Nessa empresa, aprendi sobre TypeScript e a criar sistemas de análise de dashboards durante 1 ano. <br> Após isso, atualizei meu currículo e um diretor da empresa em que estou atualmente ficou interessado na minha habilidade de <br> criar sistemas de análise gráfica e quis me contratar, mesmo eu não sabendo nada de Vue e Flutter, <br> pagando o dobro do que eu recebia na empresa na época.
+      </p>
+      <p class="sobre-mim-text">
+        Eu fiquei absimado com aquilo e confesso que com muita insegurança de não conseguir cumprir com a expectativa,<br> mas com um mês consegui criar um MVP em Vue.js com uma equipe de backend. <br> Desde então, comecei a trabalhar com Angular, Vue e Flutter.
+      </p>
+    </main>
+    <br>
+    <p-divider />
+    <br>
+    <main id="experiencias">
+      <h1>Experiencias</h1>
+
+      <div class="card flex justify-content-center">
+    <p-stepper>
+        <p-stepperPanel header="Header I">
+            <ng-template pTemplate="content" let-nextCallback="nextCallback" let-index="index">
+                <div class="flex flex-column h-12rem">
+                    <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+                        Content I
+                    </div>
+                </div>
+                <div class="flex pt-4 justify-content-end">
+                    <p-button
+                        label="Next"
+                        icon="pi pi-arrow-right"
+                        iconPos="right"
+                        (onClick)="nextCallback.emit()" />
+                </div>
+            </ng-template>
+        </p-stepperPanel>
+        <p-stepperPanel header="Header II">
+            <ng-template pTemplate="content" let-prevCallback="prevCallback" let-nextCallback="nextCallback" let-index="index">
+                <div class="flex flex-column h-12rem">
+                    <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+                        Content II
+                    </div>
+                </div>
+                <div class="flex pt-4 justify-content-between">
+                    <p-button
+                        label="Back"
+                        icon="pi pi-arrow-left"
+                        (onClick)="prevCallback.emit()" />
+                    <p-button
+                        label="Next"
+                        icon="pi pi-arrow-right"
+                        iconPos="right"
+                        (onClick)="nextCallback.emit()" />
+                </div>
+            </ng-template>
+        </p-stepperPanel>
+        <p-stepperPanel header="Header III">
+            <ng-template pTemplate="content" let-prevCallback="prevCallback" let-index="index">
+                <div class="flex flex-column h-12rem">
+                    <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
+                        Content III
+                    </div>
+                </div>
+                <div class="flex pt-4 justify-content-start">
+                    <p-button
+                        label="Back"
+                        icon="pi pi-arrow-left"
+                        (onClick)="prevCallback.emit()" />
+                </div>
+            </ng-template>
+        </p-stepperPanel>
+    </p-stepper>
+</div>
+    </main>
+  </main>
 </main>
