@@ -61,12 +61,18 @@ export class CurriculoComponent implements OnInit {
         },
       },
       {
-        label: 'Projetos',
-        icon: 'pi pi-search',
+        label: 'Experiencias',
+        icon: 'pi pi-briefcase',
+        command: () => {
+          this.viewportScroller.scrollToAnchor('experiencias');
+        },
       },
       {
         label: 'Contato',
         icon: 'pi pi-phone',
+        command: () => {
+          this.viewportScroller.scrollToAnchor('contato');
+        },
       },
     ];
 

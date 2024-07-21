@@ -10,7 +10,7 @@
             severity="info"
             icon="pi pi-arrow-left"
             href="/todo-list"
-            style="text-decoration: none;"
+            style="text-decoration: none"
           ></a>
         </div>
       </ng-template>
@@ -40,7 +40,8 @@
           />
           <p>Sou <b>Kássio Aguirres</b></p>
           <div>
-            Desenvolvedor Front-end
+            Desenvolvedor Front-end <br />
+            Especialista
           </div>
         </div>
       </div>
@@ -53,7 +54,7 @@
           </div>
 
           <p>
-            Consegui boas habilidades em escrever um código limpo e simples,
+            Tenho boas habilidades em escrever um código limpo e simples,
             <br />
             sempre pensando na usabilidade em dispositivos moveis <br />
             usando as tecnologias Angular, Java Spring e flutter.
@@ -61,85 +62,248 @@
         </div>
       </div>
     </main>
-    <br>
-    <br>
-    <br>
-    <p-divider />
-    <br>
-    <main id="sobre-mim" >
-      <h1>Sobre Mim</h1>
-      <br>
-      <p class="sobre-mim-text">
-        Eu comecei estudando programação desde meus 18 anos. A primeira framework que eu estudei foi Angular. <br> Ao me aprofundar nos conteúdos de programação, vi que tinha bastante hype sobre React e Node, <br> foi quando migrei de frameworks e, durante um ano de estudos, consegui meu primeiro emprego como desenvolvedor júnior.
-      </p>
-      <p class="sobre-mim-text">
-        Nessa empresa, aprendi sobre TypeScript e a criar sistemas de análise de dashboards durante 1 ano. <br> Após isso, atualizei meu currículo e um diretor da empresa em que estou atualmente ficou interessado na minha habilidade de <br> criar sistemas de análise gráfica e quis me contratar, mesmo eu não sabendo nada de Vue e Flutter, <br> pagando o dobro do que eu recebia na empresa na época.
-      </p>
-      <p class="sobre-mim-text">
-        Eu fiquei absimado com aquilo e confesso que com muita insegurança de não conseguir cumprir com a expectativa,<br> mas com um mês consegui criar um MVP em Vue.js com uma equipe de backend. <br> Desde então, comecei a trabalhar com Angular, Vue e Flutter.
-      </p>
-    </main>
-    <br>
-    <p-divider />
-    <br>
-    <main id="experiencias">
-      <h1>Experiencias</h1>
 
-      <div class="card flex justify-content-center">
-    <p-stepper>
-        <p-stepperPanel header="Header I">
-            <ng-template pTemplate="content" let-nextCallback="nextCallback" let-index="index">
-                <div class="flex flex-column h-12rem">
-                    <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
-                        Content I
-                    </div>
+    <p-divider />
+    <main id="experiencias">
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+        "
+      >
+        <h1 style="margin-bottom: 0">Experiencia Profissional</h1>
+        <p style="margin-top: 3px">
+          Tive vários aprendizados devido aos meus últimos empregos
+        </p>
+      </div>
+
+      <br />
+
+      <div class="card-container">
+        <p-stepper>
+          <p-stepperPanel header="Unicode Software">
+            <ng-template
+              pTemplate="content"
+              let-nextCallback="nextCallback"
+              let-index="index"
+            >
+              <div class="step-content">
+                <b>Atividades:</b>
+                <p style="margin-bottom: 0">
+                  Contribuindo com o redesign e correção de bugs, de aplicações
+                  que gerência o serviços de fabricas e oficinas, usando
+                  tecnologias como React Native, PHP e JQuery. Desenvolvimento
+                  de sistema de automação de graficos em ReactJS, Usando
+                  Typescript, I18Next para criar textos de forma dinamica,
+                  Redux-Saga para para controlar as operações assíncronas com
+                  padrões de projeto MVC. Prettier e eslint para facilitar o
+                  desenvolvimento e organização de fonte, para comunicação com
+                  API Axios, Criação de graficos usando Recharts e estilização
+                  com StyledComponents e tooltips.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                  "
+                >
+                  <p style="margin: 0 0 0 0">Desenvolvedor Front-end - Jr</p>
+                  <p style="margin: 0 0 0 0">Remoto – Indiara-GO</p>
+                  <b>Fev - 2021</b>
                 </div>
-                <div class="flex pt-4 justify-content-end">
-                    <p-button
-                        label="Next"
-                        icon="pi pi-arrow-right"
-                        iconPos="right"
-                        (onClick)="nextCallback.emit()" />
-                </div>
+              </div>
+              <div class="buttons">
+                <p-button
+                  label="Proximo"
+                  icon="pi pi-arrow-right"
+                  iconPos="right"
+                  (onClick)="nextCallback.emit()"
+                ></p-button>
+              </div>
             </ng-template>
-        </p-stepperPanel>
-        <p-stepperPanel header="Header II">
-            <ng-template pTemplate="content" let-prevCallback="prevCallback" let-nextCallback="nextCallback" let-index="index">
-                <div class="flex flex-column h-12rem">
-                    <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
-                        Content II
-                    </div>
+          </p-stepperPanel>
+          <p-stepperPanel header="Novaxs">
+            <ng-template
+              pTemplate="content"
+              let-prevCallback="prevCallback"
+              let-nextCallback="nextCallback"
+              let-index="index"
+            >
+              <div class="step-content">
+                <b>Atividades:</b>
+                <p style="margin-bottom: 5px">
+                  Realizando manutenções em lojas existentes e criando motores
+                  de vendas para hotelarias e tickets, sempre pensando na
+                  responsividade em plataformas móveis, garantindo o melhor
+                  desempenho em vendas. Também ofereci auxílio de SEO para
+                  melhores ranqueamentos no Google. <br />
+                  Experiência no desenvolvimento de sistema de automação e
+                  análise de gráficos usando Vite - Vue.js com sessão de usuário
+                  JWT, reutilização de componentes e clean code. <br />
+                  Experiência com Flutter, realizando manutenções em aplicativos
+                  de tickets, melhorando desempenho e resolvendo bugs em apps
+                  mobile para Android e iOS. Experiencia em desenvolvimento do
+                  motor de venda de tickets e hotelarias que está em angular de
+                  maneira mais flexível em vueJs, onde pode ser totalmente
+                  personalizado apenas por uma ferramenta web(GRAV – PHP)
+                  alterando o formulário administrador.
+                </p>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                  "
+                >
+                  <p style="margin: 0 0 0 0">Desenvolvedor Front-end</p>
+                  <p style="margin: 0 0 0 0">Remoto – Goiania-GO</p>
+                  <b>Mar - 2022</b>
                 </div>
-                <div class="flex pt-4 justify-content-between">
-                    <p-button
-                        label="Back"
-                        icon="pi pi-arrow-left"
-                        (onClick)="prevCallback.emit()" />
-                    <p-button
-                        label="Next"
-                        icon="pi pi-arrow-right"
-                        iconPos="right"
-                        (onClick)="nextCallback.emit()" />
-                </div>
+              </div>
+              <div class="buttons">
+                <p-button
+                  label="Anterior"
+                  icon="pi pi-arrow-left"
+                  (onClick)="prevCallback.emit()"
+                ></p-button>
+              </div>
             </ng-template>
-        </p-stepperPanel>
-        <p-stepperPanel header="Header III">
-            <ng-template pTemplate="content" let-prevCallback="prevCallback" let-index="index">
-                <div class="flex flex-column h-12rem">
-                    <div class="border-2 border-dashed surface-border border-round surface-ground flex-auto flex justify-content-center align-items-center font-medium">
-                        Content III
-                    </div>
+          </p-stepperPanel>
+        </p-stepper>
+        <br />
+        <br />
+        <br />
+        <p-divider />
+        <main id="sobre-mim">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              text-align: center;
+            "
+          >
+            <h1 style="margin-bottom: 0">Sobre Mim</h1>
+            <p style="margin-top: 3px">Inicio da minha jornada</p>
+          </div>
+          <br />
+          <p class="sobre-mim-text">
+            Eu comecei estudando programação desde meus 18 anos. A primeira
+            framework que eu estudei foi Angular. <br />
+            Ao me aprofundar nos conteúdos de programação, vi que tinha bastante
+            hype sobre React e Node, <br />
+            foi quando migrei de frameworks e, durante um ano de estudos,
+            consegui meu primeiro emprego como desenvolvedor júnior.
+          </p>
+          <p class="sobre-mim-text">
+            Nessa empresa, aprendi sobre TypeScript e a criar sistemas de
+            análise de dashboards durante 1 ano. <br />
+            Após isso, atualizei meu currículo e um diretor da empresa em que
+            estou atualmente ficou interessado na minha habilidade de <br />
+            criar sistemas de análise gráfica e quis me contratar, mesmo eu não
+            sabendo nada de Vue e Flutter, <br />
+            pagando o dobro do que eu recebia na empresa na época.
+          </p>
+          <p class="sobre-mim-text">
+            Eu fiquei absimado com aquilo e confesso que com muita insegurança
+            de não conseguir cumprir com a expectativa,<br />
+            mas com um mês consegui criar um MVP em Vue.js com uma equipe de
+            backend. <br />
+            Desde então, comecei a trabalhar com Angular, Vue e Flutter.
+          </p>
+        </main>
+
+        <p-divider />
+        <br />
+
+        <main id="contato">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              text-align: center;
+            "
+          >
+            <h1 style="margin-bottom: 0">Entre em contato</h1>
+            <p style="margin-top: 3px">Já Esta na hora</p>
+          </div>
+          <br />
+          <div class="content-contact">
+            <div class="me-contate">
+              <div class="endereço-img">
+                <img src="https://i.imgur.com/cC6DlIh.png" />
+              </div>
+              <div class="adress">
+                <p><b>Endereço: </b> Jardim da Luz - Goiânia/GO - Brasil</p>
+                <p-divider></p-divider>
+                <a
+                  style="text-decoration: none"
+                  href="mailto:aguirres.kassio@gmail.com"
+                  class="email"
+                >
+                  <b>Email: </b> aguirres.kassio&#64;gmail.com</a
+                >
+                <p-divider></p-divider>
+                <h3
+                  style="font-weight: 600; font-size: 17px; margin-bottom: 7px"
+                >
+                  Rede sociais:
+                </h3>
+                <div class="social">
+                  <div class="icons">
+                    <a
+                      type="button"
+                      pButton
+                      pRipple
+                      severity="info"
+                      icon="pi pi-linkedin"
+                      iconPos="left"
+                      target="_blank"
+                      style="text-decoration: none"
+                      href="www.linkedin.com/in/kássio-aguirres"
+                    ></a>
+                    <a
+                      type="button"
+                      pButton
+                      pRipple
+                      severity="contrast"
+                      icon="pi pi-github"
+                      iconPos="left"
+                      target="_blank"
+                      style="text-decoration: none"
+                      href="https://github.com/kassiogto"
+                    ></a>
+                  </div>
+                  <a
+                    label="WhatsApp"
+                    type="button"
+                    pButton
+                    pRipple
+                    severity="success"
+                    icon="pi pi-whatsapp"
+                    iconPos="left"
+                    target="_blank"
+                    style="text-decoration: none"
+                    href="https://api.whatsapp.com/send?phone=5564981511208&text=Ol%C3%A1!%20Vim%20pelo%20seu%20curriculo%20web!"
+                  ></a>
                 </div>
-                <div class="flex pt-4 justify-content-start">
-                    <p-button
-                        label="Back"
-                        icon="pi pi-arrow-left"
-                        (onClick)="prevCallback.emit()" />
-                </div>
-            </ng-template>
-        </p-stepperPanel>
-    </p-stepper>
-</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
     </main>
   </main>
+
+  <p-divider></p-divider>
+  <footer class="footer">
+    <p>Site desenvolvido usando angular 18 e primeNG. Modelo desenvolvido usando o conceito mobile-first. <br> Desenvolvido por <a href="www.linkedin.com/in/kássio-aguirres">Kássio Aguirres</a>  </p>
+  </footer>
 </main>
