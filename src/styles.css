@@ -68,4 +68,15 @@ body, html {
   padding-right: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+  width: 40%;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  white-space: nowrap;
+}
 
